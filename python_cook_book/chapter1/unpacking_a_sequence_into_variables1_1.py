@@ -1,8 +1,8 @@
-##含n个元素的元组（序列）赋值给多个变量，通用适用于字符串
-#长度不符会报错
+# 含n个元素的元组（序列）赋值给多个变量，通用适用于字符串
+# 长度不符会报错
 
 # 直接赋值
-a = (1,2)
+a = (1, 2)
 a1, a2 = a
 print("a1:" + str(a1))
 print("a2:" + str(a2))
@@ -13,11 +13,11 @@ print("b1:" + str(b1))
 print("b3:" + str(b3))
 print("b4:" + str(b4))
 
-#字符串
+# 字符串
 
 hello = "hello"
 
-h, e, _,_,o = hello
+h, e, _, _, o = hello
 print(h + e + o)
 
 
