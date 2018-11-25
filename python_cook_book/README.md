@@ -36,3 +36,7 @@ b1, _, b3, b4 = b
 时间复杂度ologn
 用普通的排序算法也可以实现，只不过效率没这个高
 
+#####Mapping Keys to Multiple Values in a Dictionary
+解决问题：实现一个键对应多个值的字典
+使用defaultdict,defaultdict 会自动初始化每个 key 刚开始对应的值
+
