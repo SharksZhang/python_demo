@@ -29,14 +29,22 @@ b1, _, b3, b4 = b
 如果N个元素 N 相对与集合总长度比较小时，使用堆排序，弹出少量的几个比较合适
 如果N接近集合的长度，直接排序后选切片个数性能比较好。
 
-#####Implementing a Priority Queue
+#####1.5 Implementing a Priority Queue
 解决问题：实现优先级队列，每次返回优先级最高的。
 使用堆实现，每次pop出最小的。使用index保证优先级相同的情况下保序。
 在堆中存储的数据并不是按照数组下标递增或递减，所以每次从堆中弹出的时候仍然需要heapq.heappop.
 时间复杂度ologn
 用普通的排序算法也可以实现，只不过效率没这个高
 
-#####Mapping Keys to Multiple Values in a Dictionary
+#####1.6 Mapping Keys to Multiple Values in a Dictionary
 解决问题：实现一个键对应多个值的字典
 使用defaultdict,defaultdict 会自动初始化每个 key 刚开始对应的值
+
+#####1.7 Keeping Dictionaries in Order
+解决问题：创建一个字典，并且在迭代或序列化这个字典的时候能够控制元素的顺序.
+使用个OrderedDict.OrderedDict 内部维护着一个根据键插入顺序排序的双向链表。
+每次当一个新的元素插入进来的时候， 它会被放到链表的尾部。对于一个已经存在的键的重复赋值不会改变键的顺序
+需要注意的是，一个 OrderedDict 的大小是一个普通字典的两倍.
+
+
 
